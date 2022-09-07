@@ -1,0 +1,29 @@
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php anwser add >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/anwser_add_`date +\%Y\%m\%d`.log
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php anwser money >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/anwser_money_`date +\%Y\%m\%d`.log
+
+#apr
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php apr item >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/apr_item_`date +\%Y\%m\%d`.log
+
+#flow
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php flow flow >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/low_flow_`date +\%Y\%m\%d`.log
+
+#funds
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php funds run >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/funds_run_`date +\%Y\%m\%d`.log
+
+#reward
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php reward item >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/reward_item_`date +\%Y\%m\%d`.log
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php reward invest >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/reward_invest_`date +\%Y\%m\%d`.log
+
+#sms
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php sms send >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/sms_send_`date +\%Y\%m\%d`.log
+
+#socket
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php socket main >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/socket_main_`date +\%Y\%m\%d`.log
+
+#user
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php user run >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/user_run_`date +\%Y\%m\%d`.log
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php user level >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/user_level_`date +\%Y\%m\%d`.log
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php user statis >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/user_statis_`date +\%Y\%m\%d`.log
+
+#progress
+*/1 * * * * /www/server/php/70/bin/php /www/wwwroot/jk.aoyo-electonics.com/apps/web/bin/cli.php progress update >> /www/wwwroot/jk.aoyo-electonics.com/public/logs/task/progress_update_`date +\%Y\%m\%d`.log
