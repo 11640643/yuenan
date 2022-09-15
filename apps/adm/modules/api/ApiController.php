@@ -15,6 +15,7 @@ class ApiController extends Controller
     //登录
     public function loginAction()
     {
+        
         $username = $this->getValue('username', true);
         $password = $this->getValue('password', true);
         // $sf_code = $this->getValue('sf_code', true);

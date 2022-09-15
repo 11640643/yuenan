@@ -92,7 +92,7 @@ class Prize extends Service
                 }
 
                 if ($prize['type'] == 'money') {
-                    $funName = '抽奖:' . $prize['name'];
+                    $funName = 'Quay thưởng:' . $prize['name'];
                     if (!$this->di['s_funds']->add($uid, $prize['num'], 'money', "prize_money", $funName, $cid)) {
                         throw new Exception($this->translate['funds_add_error'].':1002');
                     }
@@ -100,7 +100,7 @@ class Prize extends Service
 
                 // 抽奖所得积分计入兑换积分
                 if ($prize['type'] == 'credit') {
-                    $funName = '抽奖:' . $prize['name'];
+                    $funName = 'Quay thưởng:' . $prize['name'];
                     if (!$this->di['s_funds']->add($uid, $prize['num'], 'exchange_credit', "prize_credit", $funName, $cid)) {
                         throw new Exception($this->translate['funds_add_error'].':1002');
                     }
